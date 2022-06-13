@@ -1,0 +1,20 @@
+What is Spring security authentication and authorization?
+Authentication: This refers to the process of verifying the identity of the user,
+ using the credentials provided when accessing certain restricted resources. 
+Two steps are involved in authenticating a user, namely identification and verification. 
+An example is logging into a website with a username and a password. This is like answering the question Who are you?  
+Authorization: It is the ability to determine a user's authority to perform an action or to view data,
+ assuming they have successfully logged in. 
+This ensures that users can only access the parts of a resource that they are authorized to access.
+ It could be thought of as an answer to the question Can a user do/read this? 
+
+
+
+
+GrantedAuthority :
+
+In Spring Security, we  can think of each  GrantedAuthority as an individual privilege.
+ Ex:could include READ_AUTHORITY, WRITE_PRIVILEGE, or even CAN_EXECUTE_AS_ROOT. The important thing to understand is that the name is arbitrary.
+When using a GrantedAuthority directly, such as through the use of an expression like hasAuthority(‘READ_AUTHORITY'), 
+we are restricting access in a fine-grained manner.
+As you can probably gather, we can refer to the concept of authority by using privilege as well.

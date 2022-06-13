@@ -1,0 +1,19 @@
+The @Id annotation specifies the primary key of an entity and the @GeneratedValue provides for 
+the specification of generation strategies for the values of primary keys.
+
+
+What is the use of @data in Spring boot?
+@Data is a convenient shortcut annotation that bundles the features of @ToString , @EqualsAndHashCode , @Getter / @Setter and
+ @RequiredArgsConstructor together: In other words, @Data generates all the boilerplate that is 
+normally associated with simple POJOs (Plain Old Java Objects) and beans: getters for all fields, ...
+
+
+@Document is an annotation provided by Spring data project. It is used to identify a domain object, 
+which is persisted to MongoDB. So you can use it to map a Java class into a collection inside MongoDB. 
+If you don't use Spring Data, you don't need this annotation.
+
+
+
+@Override @Override annotation informs the compiler that the element is meant to override an element declared in a superclass. 
+Overriding methods will be discussed in Interfaces and Inheritance.
+ While it is not required to use this annotation when overriding a method, it helps to prevent errors.
